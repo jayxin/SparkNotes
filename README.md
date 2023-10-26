@@ -1,3 +1,30 @@
+<!-- vim-markdown-toc GFM -->
+
+* [Spark 的设计与运行原理](#spark-的设计与运行原理)
+    * [Introduction](#introduction)
+        * [Spark](#spark)
+        * [Scala](#scala)
+        * [Spark VS. Hadoop](#spark-vs-hadoop)
+    * [Ecosystem](#ecosystem)
+    * [Architecture](#architecture)
+        * [基本概念](#基本概念)
+        * [架构设计](#架构设计)
+        * [Spark 运行基本流程](#spark-运行基本流程)
+        * [RDD 运行原理](#rdd-运行原理)
+            * [设计背景](#设计背景)
+            * [RDD 概念](#rdd-概念)
+            * [RDD 特性](#rdd-特性)
+            * [RDD 间的依赖关系](#rdd-间的依赖关系)
+                * [Shuffle 操作](#shuffle-操作)
+                * [窄依赖和宽依赖](#窄依赖和宽依赖)
+            * [Stage 的划分](#stage-的划分)
+            * [RDD 运行过程](#rdd-运行过程)
+    * [Spark SQL](#spark-sql)
+    * [部署和应用方式](#部署和应用方式)
+    * [Demo](#demo)
+
+<!-- vim-markdown-toc -->
+
 # Spark 的设计与运行原理
 
 ## Introduction
